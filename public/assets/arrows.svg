@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="22" viewBox="0 0 52 22">
+  <g id="Group_71" data-name="Group 71" transform="translate(-291 -680)">
+    <g id="Group_63" data-name="Group 63" transform="translate(291 680)">
+      <g id="Ellipse_17" data-name="Ellipse 17" fill="#fff" stroke="rgba(112,112,112,0.27)" stroke-width="1">
+        <circle cx="11" cy="11" r="11" stroke="none"/>
+        <circle cx="11" cy="11" r="10.5" fill="none"/>
+      </g>
+      <g id="down-arrow" transform="translate(12.149 8.479) rotate(90)" opacity="0.3">
+        <path id="Path_57" data-name="Path 57" d="M5.674.066a.187.187,0,0,0-.286,0L2.869,2.9.346.066a.187.187,0,0,0-.286,0,.247.247,0,0,0,0,.321L2.721,3.374a.188.188,0,0,0,.143.066.2.2,0,0,0,.143-.066L5.669.388A.242.242,0,0,0,5.674.066Z" fill="#0d0d0d" stroke="#000" stroke-width="0.5"/>
+      </g>
+    </g>
+    <g id="Group_64" data-name="Group 64" transform="translate(321 680)">
+      <g id="Ellipse_17-2" data-name="Ellipse 17" fill="rgba(184,19,19,0.15)" stroke="rgba(184,19,19,0.2)" stroke-width="1">
+        <circle cx="11" cy="11" r="11" stroke="none"/>
+        <circle cx="11" cy="11" r="10.5" fill="none"/>
+      </g>
+      <g id="down-arrow-2" data-name="down-arrow" transform="translate(13.291 8.479) rotate(90)">
+        <path id="Path_57-2" data-name="Path 57" d="M5.674,3.374a.187.187,0,0,1-.286,0L2.869.543.346,3.374a.187.187,0,0,1-.286,0,.247.247,0,0,1,0-.321L2.721.066A.188.188,0,0,1,2.864,0a.2.2,0,0,1,.143.066L5.669,3.052A.242.242,0,0,1,5.674,3.374Z" fill="#b81313" stroke="#b81313" stroke-width="0.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

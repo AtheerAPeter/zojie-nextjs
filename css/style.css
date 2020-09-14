@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  position: relative;
+  width: 1000px;
+
+  margin: auto;
+}
+
+.nav-content {
+  z-index: 99;
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-content .topBar {
+  list-style: none;
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.nav-content .topBar li {
+  font-size: 14px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-content .topBar li:hover,
+.nav-content .topBar li select:hover {
+  color: rgb(119, 119, 119);
+}
+
+.nav-content .topBar li select {
+  font-size: 14px;
+
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.hamburger {
+  z-index: 101;
+  display: none;
+}
+
+.hamburger img {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-content .sidebar {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  z-index: 100;
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0px -10px 5px rgba(0, 0, 0, 0.4);
+  top: -20px;
+  right: -10px;
+  z-index: -1;
+  transform: scale(1);
+  transform-origin: top right;
+  transition: transform 0.5s ease;
+  padding: 0 30px;
+}
+
+/* COVER CSS */
+
+.cover-elements {
+  position: relative;
+  width: 100%;
+}
+
+.cover-elements img {
+  object-fit: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+.cover-elements .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #04040447;
+  color: #fff;
+}
+
+.cover-elements .overlay .container {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  position: relative;
+}
+
+.cover-elements .overlay .container .text-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cover-elements .overlay .container small {
+  color: #e7e7e7;
+}
+
+.cover-elements .overlay .container h1 {
+  margin: 20px 0;
+}
+
+.cover-elements .overlay .container button {
+  border: 2px solid rgba(256, 256, 256, 0.5);
+  outline: none;
+  background-color: transparent;
+  padding: 10px 40px 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
+  transition: border 0.3s ease;
+  cursor: pointer;
+}
+.cover-elements .overlay .container button:hover {
+  border: 2px solid rgba(256, 256, 256, 1);
+}
+
+.cover-elements .overlay .container button::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 10px;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-image: url(/assets/arrow.svg);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 10px;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  max-height: 100px;
+  overflow: scroll;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.cards img {
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 10px;
+  min-width: 60px;
+  max-width: 60px;
+  height: 60px;
+}
+
+.cards .card {
+  display: flex;
+  max-width: 250px;
+  margin: 0 10px;
+}
+
+.cards .card p {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.cards .card h5 {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 1000px;
+    width: auto;
+    padding: 0 20px;
+  }
+
+  .nav-content .topBar {
+    flex-wrap: wrap;
+  }
+
+  .nav-content .topBar li {
+    margin-left: 5px;
+  }
+  .cards {
+    border-top-right-radius: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-content .topBar {
+    list-style: none;
+    top: 0;
+    right: 0;
+    position: absolute;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    transform: scale(0);
+    transform-origin: top right;
+
+    transition: right, width, height transform 0.5s ease;
+  }
+  .nav-content .sidebar select {
+    outline: none;
+    border: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
